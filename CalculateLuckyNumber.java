@@ -35,7 +35,7 @@ public class CalculateLuckyNumber {
 
 	}
 	
-	// create a method to calculate lucky number frome sum of characters
+	// create a method to calculate lucky number from sum of characters
 	public static int calculateLuckyNumber(int number) {
 		int luckyNumber = 0;
 
