@@ -37,7 +37,7 @@ public class AdditionQuiz {
 		
 	}
 	
-	public static void quizGenerator(int n) {
+	public static void quizGenerator(int difficulty) {
 		// ask user to enter size of quiz
 		Scanner input = new Scanner(System.in);
 		System.out.println("How many number of questions you want? ");
@@ -46,8 +46,8 @@ public class AdditionQuiz {
 		System.out.println("\nquiz started... \n");
 		int correctAnswers = 0;
 		for(int i = 0; i < quizSize; i++) {
-			num1 = (int)(Math.random()*n);
-			num2 = (int)(Math.random()*n);
+			num1 = (int)(Math.random()*difficulty);
+			num2 = (int)(Math.random()*difficulty);
 			
 			ans = num1 + num2;
 			
@@ -69,9 +69,11 @@ public class AdditionQuiz {
 		// calculate score in percentage
 		double score = (double)(correctAnswers) / (double)(quizSize) * 100;
 		System.out.println("\nquiz ended... \n");
-		System.out.println(" Score: " + score + "%");
+		System.out.println("Score: " + score + "%");
 
 	}
+	
+
 	
 
 }
